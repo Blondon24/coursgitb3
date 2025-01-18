@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<div class="apropos2">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .image-slider {
+            margin: 0 auto;
+            width: 70%;
+            height: 500px; /* Ajustez la hauteur selon vos besoins */
+            overflow: hidden;
+            border: 10px solid #fff;
+            border-radius: 5px;
+            position: relative;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .slider {
+            display: flex;
+            animation: slide 16s linear infinite; /* Durée totale ajustée pour 8 images */
+            animation-delay: 3s; /* Démarre après 3 secondes */
+        }
+
+        .slider img {
+            width: 100%;
+            height: 100%;
+            flex-shrink: 0; /* Empêche l'image de se réduire */
+        }
+
+        @keyframes slide {
+            0% {
+                transform: translateX(0);
+            }
+            12.5% {
+                transform: translateX(0); /* Affiche la première image */
+            }
+            25% {
+                transform: translateX(-100%); /* Passe à la seconde image */
+            }
+            37.5% {
+                transform: translateX(-100%); /* Affiche la seconde image */
+            }
+            50% {
+                transform: translateX(-200%); /* Passe à la troisième image */
+            }
+            62.5% {
+                transform: translateX(-200%); /* Affiche la troisième image */
+            }
+            75% {
+                transform: translateX(-300%); /* Passe à la quatrième image */
+            }
+            87.5% {
+                transform: translateX(-300%); /* Affiche la quatrième image */
+            }
+            100% {
+                transform: translateX(-400%); /* Passe à la cinquième image */
+            }
+        }
+    </style>
+    <center style="font-size: 2rem; color: #333;">
+        <p>Nous formons les futurs leaders dans les domaines numériques</p>
+    </center>
+    <div class="image-slider">
+        <div class="slider">
+            <img src="../assets/Untitled.jpg" alt="Image 1">
+            <img src="../assets/rr.jpg" alt="Image 2">
+            <img src="../assets/menu-deroulant-wordpress.jpg" alt="Image 3">
+            <img src="../assets/images.jpg" alt="Image 4">
+            <img src="../assets/gestion-1-740x447.jpg" alt="Image 5">
+            <img src="../assets/dd.jpg" alt="Image 6">
+            <img src="../assets/d2.jpg" alt="Image 7">
+            <img src="../assets/Capture-decran-2022-11-30-160748.png" alt="Image 8">
+            <img src="../assets/d2.jpg" alt="Image 9">
+            <img src="../assets/dd.jpg" alt="Image 9">
+            <img src="../assets/rr.jpg" alt="Image 9">
+            <img src="../assets/th.jpeg" alt="Image 9">
+        </div>
+    </div>
+</div>
+</body>
+</html>
